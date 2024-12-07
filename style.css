@@ -1,0 +1,222 @@
+/* Import Google Font cdn link */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Montserrat" sans-serif;
+}
+
+body {
+  background: #f3f6fd;
+  /* padding: 16px; */
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 10px;
+}
+.logo-icon {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.search-box {
+  width: 600px;
+  padding: 12px 15px;
+  background: #fff;
+  border-radius: 30px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.search-box {
+  color: gray;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: rgb(158, 157, 157);
+  cursor: pointer;
+}
+.top-sidebar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.icons i {
+  padding: 10px;
+  border-radius: 50%;
+}
+.icons i:hover {
+  background: rgb(158, 157, 157);
+  color: #fff;
+  transition: 0.3s linear infinite;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.user-profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* sidebar */
+.sidebar {
+  width: 90px;
+  background: #fff;
+  height: calc(100vh - 75px);
+  transition: all 0.3s linear;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.sidebar:hover {
+  width: 200px;
+}
+
+nav {
+  padding: 1.2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow: hidden;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: rgb(158, 157, 157);
+  font-weight: 500;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+}
+
+nav a:hover,
+.active {
+  background: linear-gradient(to right, #000, #2b2a2a);
+  color: #fff;
+  border-radius: 10px;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-self: center;
+  border: 1px solid orangered;
+  padding: 1px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+}
+
+/* blog sections */
+
+section {
+  display: flex;
+  gap: 20px;
+  height: calc(100vh - 75px);
+}
+.blog-section {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  background: #fff;
+  border-top-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.blog-post {
+  padding: 20px;
+  background: rgb(120, 173, 170);
+  color: #fff;
+  border-radius: 8px;
+  position: relative;
+}
+
+.blog-post .category {
+  font-size: 14px;
+  padding: 10px 0;
+  color: #ebebeb;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.blog-post button {
+  background: #fff;
+  padding: 8px 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+}
+
+button:hover {
+  transform: translateY(-5px);
+}
+.p1 {
+  flex-basis: 100%;
+}
+.p2,
+.p3 {
+  flex-basis: 49%;
+}
+
+.color1 {
+  background: linear-gradient(to right, #4a6e76, #2d3b3b);
+  border: 1px solid #4a6e76;
+}
+
+.color2 {
+  background: linear-gradient(to right, #7a5c61, #3a3a3a);
+  border: 1px solid #7a5c61;
+}
+
+.color3 {
+  background: linear-gradient(to bottom, #1a3c56, #576c7e);
+  border: 1px solid #1a3c56;
+}
+
+.color4 {
+  background: linear-gradient(to bottom, #9b2d20, #4e1f1b);
+  border: 1px solid #9b2d20;
+}
+
+.color5 {
+  background: linear-gradient(to right, #5d6a80, #3a4a6c);
+  border: 1px solid #5d6a80;
+}
+
+.color6 {
+  background: linear-gradient(to right, #212121, #202b2c);
+  border: 1px solid #0a0c0d;
+}
